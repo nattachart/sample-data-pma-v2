@@ -43,14 +43,14 @@ class PowerWithTimeGenerator:
 						self.__stopTimeStamp = self.__stopTimeStamp + oneDay;
 						
 				self.__st.setNewLimitedTime(self.__startTimeStamp, self.__stopTimeStamp);
-				#print("startTimeStamp: "+str(self.__startTimeStamp)+", stopTimeStamp: "+str(self.__stopTimeStamp));
+				#print("+++++startTimeStamp: "+str(self.__startTimeStamp)+", stopTimeStamp: "+str(self.__stopTimeStamp));
 		else:
 			self.power = self.__pc.getRandomPower(); #Assign a power for only the first time
 		
 		#print("timeStamp: "+str(self.timeStamp)+", stopTimeStamp: "+str(self.__stopTimeStamp));
 		self.timeStamp = self.__st.getNextSampleTime();
 		
-		#print(str(self.timeStamp)+", "+str(self.__endDate));
+		#print("=========timeStamp: "+str(self.timeStamp)+", endData: "+str(self.__endDate));
 		if self.timeStamp < self.__endDate:
 			if not(self.timeStamp.time() > self.__pcp.limitedStopTime or self.timeStamp.time() < self.__pcp.limitedStartTime):
 				if self.timeStamp > self.__stopTimeStamp:

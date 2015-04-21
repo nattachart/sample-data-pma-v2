@@ -9,10 +9,10 @@ limitedStartTime = datetime.time(hour=8, minute=30);
 limitedStopTime = datetime.time(hour=18, minute=30);
 minPeriod = datetime.timedelta(minutes=30);
 maxPeriod = datetime.timedelta(minutes=60);
-minSecondInterval = 2;
-maxSecondInterval = 5;
-startDate = datetime.datetime(year=2014, month=10, day=20);
-endDate = datetime.datetime(year=2014, month=10, day=21);
+minSecondInterval = 240;
+maxSecondInterval = 1200;
+startDate = datetime.datetime(year=2015, month=4, day=20);
+endDate = datetime.datetime(year=2015, month=4, day=22);
 godID = 35;
 
 #dataID = 0;

@@ -5,13 +5,13 @@ db = "pma_sp2014_db";
 
 powerList = [175, 350];
 limitedStartTime = datetime.time(hour=7, minute=0);
-limitedStopTime = datetime.time(hour=6, minute=59);
-minPeriod = datetime.timedelta(seconds=10);
-maxPeriod = datetime.timedelta(seconds=15);
-minSecondInterval = 2;
-maxSecondInterval = 5;
-startDate = datetime.datetime(year=2014, month=10, day=20);
-endDate = datetime.datetime(year=2014, month=10, day=21);
+limitedStopTime = datetime.time(hour=23, minute=59);
+minPeriod = datetime.timedelta(minutes=10);
+maxPeriod = datetime.timedelta(minutes=15);
+minSecondInterval = 240;
+maxSecondInterval = 1200;
+startDate = datetime.datetime(year=2015, month=4, day=20);
+endDate = datetime.datetime(year=2015, month=4, day=22);
 godID = 42;
 
 #dataID = 0;
