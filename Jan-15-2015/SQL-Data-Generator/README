@@ -1,5 +1,0 @@
-
-
-1. Execute 01-gen-data.py only, i.e. `python 01-gen-data.py`.
-2. The results are SQL scripts in `data` directory.
-3. Execute these SQL script in the database.
